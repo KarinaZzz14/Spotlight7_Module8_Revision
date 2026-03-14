@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eco Revision — Spotlight 7 Module 8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Spotlight 7 Module 8 — vocabulary, grammar and final test" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <div class="bg-decor">
+    <span class="leaf leaf-1">🌿</span>
+    <span class="leaf leaf-2">🍃</span>
+    <span class="leaf leaf-3">🌱</span>
+    <span class="bubble bubble-1"></span>
+    <span class="bubble bubble-2"></span>
+    <span class="bubble bubble-3"></span>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#" class="brand" id="brandHome" aria-label="Go to vocabulary">
+        <div class="brand-icon">🌍</div>
+        <div>
+          <div class="brand-title">Eco Revision</div>
+          <div class="brand-subtitle">Spotlight 7 • Module 8</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button type="button" class="nav-btn active" data-page="vocab">Vocabulary</button>
+        <button type="button" class="nav-btn" data-page="context">Context</button>
+        <button type="button" class="nav-btn" data-page="grammar">Grammar</button>
+        <button type="button" class="nav-btn" data-page="test">Final Test</button>
+      </nav>
+
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span id="themeToggleIcon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="page-vocab" class="page">
+      <div class="hero panel">
+        <div class="hero-content">
+          <div class="hero-badge">Interactive eco-revision</div>
+          <h1>Learn Module 8 with bright cards, clear rules and real practice</h1>
+          <p>
+            43 ecology terms, grammar only from Spotlight 7 Module 8, explanations for every answer,
+            mixed task types, animations, dark/light theme and an expanded final test.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-number">43</div>
+              <div class="stat-label">terms</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">3</div>
+              <div class="stat-label">grammar blocks</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">20</div>
+              <div class="stat-label">final test tasks</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="hero-card">
+            <div class="hero-card-title">How it works</div>
+            <ul>
+              <li>Flip cards to see image + translation + pronunciation</li>
+              <li>Do writing + multiple choice tasks</li>
+              <li>Read explanations after every answer</li>
+              <li>Track progress in the final test</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-head">
+        <div>
+          <h2>Vocabulary Flashcards</h2>
+          <p>Front side: word only. Back side: local generated image, translation and transcription.</p>
+        </div>
+        <div class="section-chip">Cards + sound</div>
+      </div>
+
+      <div class="cards-grid" id="flashcards"></div>
+    </section>
+
+    <section id="page-context" class="page hidden">
+      <div class="section-head">
+        <div>
+          <h2>Vocabulary in Context</h2>
+          <p>Mix of writing tasks and multiple-choice tasks. You can try again if you are wrong.</p>
+        </div>
+        <div class="section-chip">Write + choose</div>
+      </div>
+
+      <div class="panel" id="contextContainer"></div>
+    </section>
+
+    <section id="page-grammar" class="page hidden">
+      <div class="section-head">
+        <div>
+          <h2>Grammar Practice</h2>
+          <p>Only the grammar from Spotlight 7 Module 8.</p>
+        </div>
+        <div class="section-chip">Quick grammar navigation</div>
+      </div>
+
+      <div class="grammar-quick-nav" id="grammarQuickNav"></div>
+      <div id="grammarContent"></div>
+    </section>
+
+    <section id="page-test" class="page hidden">
+      <div class="section-head">
+        <div>
+          <h2>Final Mega-Test</h2>
+          <p>Expanded mixed test with score, progress and review of mistakes.</p>
+        </div>
+        <div class="section-chip">20 tasks</div>
+      </div>
+
+      <div class="test-progress panel">
+        <div class="progress-meta">
+          <div class="progress-title">Progress</div>
+          <div class="progress-text" id="testProgressText">0 / 20 answered</div>
+        </div>
+        <div class="progress-bar-wrap">
+          <div class="progress-bar" id="testProgressBar"></div>
+        </div>
+      </div>
+
+      <div id="testContainer" class="panel"></div>
+      <div id="testResults" class="panel hidden"></div>
+    </section>
+  </main>
+</body>
+</html>
